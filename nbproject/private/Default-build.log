@@ -1,0 +1,4 @@
+Scanning dependencies of target Principal
+[ 50%] Building CXX object CMakeFiles/Principal.dir/src/Principal.cpp.o
+[100%] Linking CXX executable bin/Principal
+[100%] Built target Principal
