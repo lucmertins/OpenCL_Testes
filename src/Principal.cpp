@@ -12,5 +12,6 @@ using namespace std;
 int main() {
     cl_uint ret_num_platforms;
     cl_int ret = clGetPlatformIDs(0, NULL, &ret_num_platforms);
+    cout << ret << endl;
    
 }
