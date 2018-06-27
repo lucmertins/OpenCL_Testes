@@ -29,6 +29,13 @@ else()
         message(STATUS "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
 endif()
 
-add_executable (Principal ${PROJECT_SOURCE_DIR}/src/Principal.cpp)
 
-target_link_libraries (Principal OpenCL::OpenCL)
+add_executable (HelloWorld ${PROJECT_SOURCE_DIR}/src/HelloWorld.cpp)
+
+target_link_libraries (HelloWorld OpenCL::OpenCL)
+
+configure_file(src/HelloWorld.cl ${PROJECT_SOURCE_DIR}/bin/HelloWorld.cl COPYONLY)
+
+
+execute_process(COMMAND ${PROJECT_SOURCE_DIR}/bin/HelloWorld args
+                WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
