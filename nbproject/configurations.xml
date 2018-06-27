@@ -19,6 +19,14 @@
             <in>CMakeCXXCompilerId.cpp</in>
           </df>
         </df>
+        <df name="3.11.2">
+          <df name="CompilerIdC">
+            <in>CMakeCCompilerId.c</in>
+          </df>
+          <df name="CompilerIdCXX">
+            <in>CMakeCXXCompilerId.cpp</in>
+          </df>
+        </df>
         <in>feature_tests.c</in>
         <in>feature_tests.cxx</in>
       </df>
@@ -48,9 +56,10 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <flagsDictionary>
-        <element flagsID="0" commonFlags="-std=c++14"/>
-        <element flagsID="1" commonFlags="-std=c++1z"/>
-        <element flagsID="2" commonFlags="-std=c11"/>
+        <element flagsID="0" commonFlags="-std=c++11"/>
+        <element flagsID="1" commonFlags="-std=c++14"/>
+        <element flagsID="2" commonFlags="-std=c++1z"/>
+        <element flagsID="3" commonFlags="-std=c11"/>
       </flagsDictionary>
       <codeAssistance>
       </codeAssistance>
@@ -59,7 +68,7 @@
           <buildCommandWorkingDir>.</buildCommandWorkingDir>
           <buildCommand>${MAKE} -f Makefile</buildCommand>
           <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
-          <executablePath>bin/Principal</executablePath>
+          <executablePath>bin/HelloWorld</executablePath>
         </makeTool>
         <preBuild>
           <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
@@ -75,8 +84,6 @@
             ex="false"
             tool="1"
             flavor2="11">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="CMakeFiles/3.11.0/CompilerIdC/CMakeCCompilerId.c"
             ex="false"
@@ -87,18 +94,28 @@
             ex="false"
             tool="1"
             flavor2="11">
-        <ccTool flags="0">
+        <ccTool flags="1">
         </ccTool>
       </item>
+      <item path="CMakeFiles/3.11.2/CompilerIdC/CMakeCCompilerId.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="CMakeFiles/3.11.2/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
       <item path="CMakeFiles/feature_tests.c" ex="false" tool="0" flavor2="10">
-        <cTool flags="2">
+        <cTool flags="3">
           <incDir>
             <pElem>CMakeFiles/CMakeTmp</pElem>
           </incDir>
         </cTool>
       </item>
       <item path="CMakeFiles/feature_tests.cxx" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="2">
           <incDir>
             <pElem>CMakeFiles/CMakeTmp</pElem>
           </incDir>
@@ -124,7 +141,9 @@
           </incDir>
         </ccTool>
       </folder>
-      <item path="src/HelloWorld.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/HelloWorld.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
       </item>
     </conf>
   </confs>
