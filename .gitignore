@@ -42,3 +42,7 @@ compile_commands.json
 CTestTestfile.cmake
 
 /build/
+
+/nbproject/private*
+
+/bin/
