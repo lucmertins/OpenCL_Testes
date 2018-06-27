@@ -5,41 +5,13 @@
       <df name="bin">
       </df>
       <df name="build">
-        <df name="CMakeFiles">
-          <df name="3.11.2">
-            <df name="CompilerIdC">
-              <df name="tmp">
-              </df>
-              <in>CMakeCCompilerId.c</in>
-            </df>
-            <df name="CompilerIdCXX">
-              <df name="tmp">
-              </df>
-              <in>CMakeCXXCompilerId.cpp</in>
-            </df>
-          </df>
-          <df name="CMakeTmp">
-          </df>
-          <df name="Principal.dir">
-            <df name="src">
-            </df>
-          </df>
-          <df name="Progress">
-          </df>
-          <in>feature_tests.c</in>
-          <in>feature_tests.cxx</in>
-        </df>
       </df>
       <df name="CMakeFiles">
         <df name="3.11.0">
           <df name="CompilerIdC">
-            <df name="tmp">
-            </df>
             <in>CMakeCCompilerId.c</in>
           </df>
           <df name="CompilerIdCXX">
-            <df name="tmp">
-            </df>
             <in>CMakeCXXCompilerId.cpp</in>
           </df>
         </df>
@@ -57,6 +29,10 @@
         </df>
         <df name="CMakeTmp">
         </df>
+        <df name="HelloWorld.dir">
+          <df name="src">
+          </df>
+        </df>
         <df name="Principal.dir">
           <df name="src">
           </df>
@@ -70,6 +46,7 @@
       <df name="lib">
       </df>
       <df name="src">
+        <in>HelloWorld.cpp</in>
         <in>Principal.cpp</in>
       </df>
     </df>
@@ -113,7 +90,7 @@
           <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
         </runcommandpicklist>
         <runcommand>"${OUTPUT_PATH}"</runcommand>
-        <rundir>.</rundir>
+        <rundir>/home/mertins/Desenvolvimento/C++/Geral/OpenCL_Testes/./bin</rundir>
         <buildfirst>false</buildfirst>
         <terminal-type>0</terminal-type>
         <remove-instrumentation>0</remove-instrumentation>

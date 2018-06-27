@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Principal
+# Target rules for targets named HelloWorld
 
 # Build rule for target.
-Principal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Principal
-.PHONY : Principal
+HelloWorld: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 HelloWorld
+.PHONY : HelloWorld
 
 # fast build rule for target.
-Principal/fast:
-	$(MAKE) -f CMakeFiles/Principal.dir/build.make CMakeFiles/Principal.dir/build
-.PHONY : Principal/fast
+HelloWorld/fast:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/build
+.PHONY : HelloWorld/fast
 
-src/Principal.o: src/Principal.cpp.o
+src/HelloWorld.o: src/HelloWorld.cpp.o
 
-.PHONY : src/Principal.o
+.PHONY : src/HelloWorld.o
 
 # target to build an object file
-src/Principal.cpp.o:
-	$(MAKE) -f CMakeFiles/Principal.dir/build.make CMakeFiles/Principal.dir/src/Principal.cpp.o
-.PHONY : src/Principal.cpp.o
+src/HelloWorld.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/src/HelloWorld.cpp.o
+.PHONY : src/HelloWorld.cpp.o
 
-src/Principal.i: src/Principal.cpp.i
+src/HelloWorld.i: src/HelloWorld.cpp.i
 
-.PHONY : src/Principal.i
+.PHONY : src/HelloWorld.i
 
 # target to preprocess a source file
-src/Principal.cpp.i:
-	$(MAKE) -f CMakeFiles/Principal.dir/build.make CMakeFiles/Principal.dir/src/Principal.cpp.i
-.PHONY : src/Principal.cpp.i
+src/HelloWorld.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/src/HelloWorld.cpp.i
+.PHONY : src/HelloWorld.cpp.i
 
-src/Principal.s: src/Principal.cpp.s
+src/HelloWorld.s: src/HelloWorld.cpp.s
 
-.PHONY : src/Principal.s
+.PHONY : src/HelloWorld.s
 
 # target to generate assembly for a file
-src/Principal.cpp.s:
-	$(MAKE) -f CMakeFiles/Principal.dir/build.make CMakeFiles/Principal.dir/src/Principal.cpp.s
-.PHONY : src/Principal.cpp.s
+src/HelloWorld.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/src/HelloWorld.cpp.s
+.PHONY : src/HelloWorld.cpp.s
 
 # Help Target
 help:
@@ -157,11 +157,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... Principal"
+	@echo "... HelloWorld"
 	@echo "... edit_cache"
-	@echo "... src/Principal.o"
-	@echo "... src/Principal.i"
-	@echo "... src/Principal.s"
+	@echo "... src/HelloWorld.o"
+	@echo "... src/HelloWorld.i"
+	@echo "... src/HelloWorld.s"
 .PHONY : help
 
 
